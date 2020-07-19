@@ -1,6 +1,5 @@
-
 ::selection {
-    background: rgba(0,149,255,.1);
+	background: rgba(0,149,255,.1);
 }
 
 a {
@@ -41,7 +40,6 @@ blockquote {
 	color: #666;
 }
 
-
 input[type="text"],input[type="email"],input[type="url"],input[type="password"],textarea {
 	padding: 5px;
 	border: 1px solid #E9E9E9;
@@ -64,33 +62,71 @@ textarea {
 	border-bottom-color: transparent;
 }
 
-
 #header {
 	padding-top: 35px;
 }
 
 .title {
-	font-size: 3em;
+	font-size: 2em;
 	font-weight: 200;
-	margin-top:10px;
+	margin-top: 10px;
 	text-align: center;
 	letter-spacing: 8px;
+}
+
+@media screen and (min-width:760px) {
+ 
+	.title {
+		font-size: 3em;
+		font-weight: 200;
+		margin-top: 10px;
+		text-align: center;
+		letter-spacing: 8px;
+	}
 }
 
 .description {
 	margin: .4em 0 0;
 	color: #919191;
-    text-align: center;
-    font-size: 2em;
-    position: relative;
-    top: -1.5em;
+	text-align: center;
+	font-size: 1em;
+	position: relative;
+	top: -1.5em;
+}
+
+@media screen and (min-width:760px) {
+ 
+	.description {
+		margin: .4em 0 0;
+		color: #919191;
+		text-align: center;
+		font-size: 2em;
+		position: relative;
+		top: -1.5em;
+	}
+}
+
+@media screen and (min-width:760px) {
+ 
+	nav {
+		line-height: 2em;
+		font-size: 1em;
+		font-weight: 200;
+		text-align: center;
+		white-space: nowrap;
+		overflow-x: auto;
+		overflow-y: hidden;
+		z-index: 150;
+		-webkit-overflow-scrolling: touch;
+	}
 }
 
 nav {
-    line-height: 2em;
-    font-size: 1em;
-    font-weight: 200;
-    text-align: center;
+	white-space: nowrap;
+	overflow-x: auto;
+	overflow-y: hidden;
+	z-index: 150;
+	-webkit-overflow-scrolling: touch;
 }
 
 nav a {
@@ -107,29 +143,31 @@ nav .current {
 }
 
 .search {
-    position: relative;
-    display: inline-block;
+	position: relative;
+	display: inline-block;
 }
 
 .search .text {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 	border: none;
-	outline:none;
-    background: transparent;
-    font-size: 1.2em;
-    font-weight: 500;
-    letter-spacing: -0.625px;
-    width: 100px;
-    -webkit-transition: all cubic-bezier(.15,1,.5,1) 0.8s;
-    -o-transition: all cubic-bezier(.15,1,.5,1) 0.8s;
-    transition: all cubic-bezier(.15,1,.5,1) 0.8s;
+	outline: none;
+	background: transparent;
+	font-size: 1.2em;
+	font-weight: 500;
+	letter-spacing: -0.625px;
+	width: 100px;
+	-webkit-transition: all cubic-bezier(.15,1,.5,1) 0.8s;
+	-o-transition: all cubic-bezier(.15,1,.5,1) 0.8s;
+	transition: all cubic-bezier(.15,1,.5,1) 0.8s;
 }
 
-
-.post {
-	margin: 2em;
-	font-size: 18px;
+@media screen and (min-width:760px) {
+ 
+	.post {
+		margin: 2em;
+		font-size: 18px;
+	}
 }
 
 .post-title {
@@ -139,19 +177,20 @@ nav .current {
 .post #tag {
 	font-size: 1.5em;
 }
+
 .post h2 span:before {
-    content: "#";
-    margin-right: 5px;
-    color: #ff6d6d94;
+	content: "#";
+	margin-right: 5px;
+	color: #ff6d6d94;
 }
 
-.post-content a{
-		-webkit-transition: all .35s;
-		transition: all .35s;
-		color: #ff4e6a;
-		text-decoration: none;
-		position: relative;
-		word-wrap: break-word;
+.post-content a {
+	-webkit-transition: all .35s;
+	transition: all .35s;
+	color: #ff4e6a;
+	text-decoration: none;
+	position: relative;
+	word-wrap: break-word;
 }
 
 .post-content a:focus,.post-content a:hover {
@@ -174,52 +213,53 @@ nav .current {
 	width: 100%
 }
 
-.post-content h1 h2 h3{
+.post-content h1 h2 h3 {
 	position: relative;
-    padding-bottom: 10px;
+	padding-bottom: 10px;
 }
 
-.post-content h1:before{
-    content: "「";
-    margin-right: 5px;
-    color: #FF6D6D;
+.post-content h1:before {
+	content: "「";
+	margin-right: 5px;
+	color: #FF6D6D;
     /* font-size: 25px; */
 }
 
 .post-content h1:after {
-    content: "」";
-    margin-left: 5px;
-    color: #FF6D6D;
+	content: "」";
+	margin-left: 5px;
+	color: #FF6D6D;
     /* font-size: 25px; */
 }
 
-.post-content h2:before{
-    content: "「";
-    margin-right: 5px;
-    color: #FF6D6D;
+.post-content h2:before {
+	content: "「";
+	margin-right: 5px;
+	color: #FF6D6D;
     /* font-size: 25px; */
 }
 
 .post-content h2:after {
-    content: "」";
-    margin-left: 5px;
-    color: #FF6D6D;
+	content: "」";
+	margin-left: 5px;
+	color: #FF6D6D;
     /* font-size: 25px; */
 }
 
-.post-content h3:before{
-    content: "「";
-    margin-right: 5px;
-    color: #FF6D6D;
+.post-content h3:before {
+	content: "「";
+	margin-right: 5px;
+	color: #FF6D6D;
     /* font-size: 25px; */
 }
 
 .post-content h3:after {
-    content: "」";
-    margin-left: 5px;
-    color: #FF6D6D;
+	content: "」";
+	margin-left: 5px;
+	color: #FF6D6D;
     /* font-size: 25px; */
 }
+
 .post-author {
 	padding: 20px 0;
 	margin: 20px 15px 0 0;
@@ -228,48 +268,50 @@ nav .current {
 }
 
 .post-author-bottom {
-    margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 .post-author-flextop {
-    align-items: flex-start;
-    display: flex;
+	align-items: flex-start;
+	display: flex;
 }
 
 .post-author .avatar {
-    border-radius: 100%;
-    width: 60px;
-    height: 60px;
+	border-radius: 100%;
+	width: 60px;
+	height: 60px;
 }
+
 .post-author-left {
 	margin-left: 25px;
 	margin-top: -20px;
 }
+
 .post-author h3 {
-font-size: 24px;
-    margin-top: 15px;
+	font-size: 24px;
+	margin-top: 15px;
 	line-height: 1;
-    margin-bottom: 15px;
-    margin-top: 20px;
+	margin-bottom: 15px;
+	margin-top: 20px;
 }
 
 .post-author p {
-    font-size: 18px;
+	font-size: 18px;
 	color: rgba(0, 0, 0, .6);
-    margin-top: 0px;
-    margin-bottom: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
-.post .tags a{
+.post .tags a {
 	clear: both;
 	height: 28px;
-    font-size: 14px;
-    line-height: 2;
-    border-radius: 5px;
-    padding: 5px;
-    margin-top: 12px;
-    color: #000;
-    background-color: #a5a5b112;
+	font-size: 14px;
+	line-height: 2;
+	border-radius: 5px;
+	padding: 5px;
+	margin-top: 12px;
+	color: #000;
+	background-color: #a5a5b112;
 }
 
 .protected .text {
@@ -310,10 +352,10 @@ font-size: 24px;
 }
 
 #comments .submit {
-    border: 1px solid #E9E9E9;
-    border-radius: 1px;
-    padding: 5px 10px;
-    background: white;
+	border: 1px solid #E9E9E9;
+	border-radius: 1px;
+	padding: 5px 10px;
+	background: white;
 }
 
 .comment-list,.comment-list ol {
@@ -424,7 +466,6 @@ font-size: 24px;
 	border-width: 2px 0 0 0;
 }
 
-
 @media(min-width:1200px) {
 	.container {
 		max-width: 952px;
@@ -444,7 +485,6 @@ font-size: 24px;
 	padding-right: 10px;
 }
 
-
 .row [class*="col-"] {
 	min-height: 1px;
 	padding-right: 10px;
@@ -454,7 +494,6 @@ font-size: 24px;
 .row [class*="-push-"],.row [class*="-pull-"] {
 	position: relative;
 }
-
 
 .col-mb-12 {
 	width: 100%;
