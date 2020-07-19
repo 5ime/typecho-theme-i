@@ -3,7 +3,6 @@
 <html class="no-js">
 <head>
     <meta charset="<?php $this->options->charset(); ?>">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title><?php $this->archiveTitle(array(
@@ -14,7 +13,6 @@
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
     <meta name="keywords" content="<?php $this->options->keywords() ?>">
     <meta name="description" content="<?php $this->options->description() ?>"/>
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('grid.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
     <?php $this->header(); ?>
 </head>
