@@ -9,7 +9,7 @@
     	<?php endwhile; ?>
         <?php else: ?>
             <article class="post">
-                <h2 class="post-title"><?php _e('没有找到内容'); ?></h2>
+                <p class="post-title"><?php _e('没有找到内容'); ?></p>
             </article>
         <?php endif; ?>
         <?php $this->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>
